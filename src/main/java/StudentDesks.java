@@ -10,21 +10,31 @@ class StudentDesks {
         int classA = scanner.nextInt();
         int classB = scanner.nextInt();
         int classC = scanner.nextInt();
-        int totalDesks;
-        int totalStudents;
+        int desksA;
+        int desksB;
+        int desksC;
+        int total;
         /*
          *  your code goes here
          */
-        totalStudents = classA + classB + classC;
-        if (totalStudents % 2 == 1) {
-          totalDesks = (classA + classB + classC + 1) /2;
-          System.out.print(totalDesks);
+        if (classA % 2 == 0) {
+          desksA = classA / 2;
+        } else {
+          desksA = (classA/2) + 1;
         }
-        else {
-          totalDesks = (classA + classB + classC) /2;
-          System.out.print(totalDesks);
+        if (classB % 2 == 0) {
+          desksB = classB / 2;
+        } else {
+          desksB = (classB/2) + 1;
         }
+        if (classC % 2 == 0) {
+          desksC = classC / 2;
+        } else {
+          desksC = (classC/2) + 1;
+        }
+        total = desksA + desksB + desksC;
         
+        System.out.print(total);
         
         // closing the scanner object
         scanner.close();
