@@ -14,7 +14,8 @@ class StudentDesks {
         /*
          *  your code goes here
          */
-        double temp = Math.ceil((classA + classB + classC) / 2.0);
+        int temp1 = classA + classB + classC;
+        double temp = Math.ceil(temp1 / 2.0);
         total = (int)temp;
         System.out.print(total);
         
