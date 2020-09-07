@@ -20,7 +20,7 @@ class StudentDesks {
           totalDesks = (classA + classB + classC + 1) /2;
           System.out.print(totalDesks);
         }
-        else if (totalStudents % 2 == 0) {
+        else (totalStudents % 2 == 0) {
           totalDesks = (classA + classB + classC) /2;
           System.out.print(totalDesks);
         }
